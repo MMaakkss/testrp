@@ -10,7 +10,7 @@
             :key="item.category"
           >
             <img
-              :src="'src/assets/img/icons/' + item.imageID + '.svg'"
+              :src="'/src/assets/img/icons/' + item.imageID + '.svg'"
               alt="dance"
             />
             <div class="item__title">{{ item.animTitle }}</div>
@@ -28,7 +28,7 @@
           />
           <img
             class="search__icon"
-            src="src/assets/img/icons/search.svg"
+            src="/src/assets/img/icons/search.svg"
             alt="search"
           />
         </div>
@@ -45,7 +45,7 @@
               >
                 <div class="item__icon">
                   <img
-                    :src="'src/assets/img/icons/' + item.imageID + '.svg'"
+                    :src="'/src/assets/img/icons/' + item.imageID + '.svg'"
                     alt="dance"
                   />
                 </div>
@@ -75,13 +75,13 @@
                 <template v-if="fastItems[n - 1]">
                   <img
                     class="delete-icon"
-                    src="src/assets/img/icons/close.svg"
+                    src="/src/assets/img/icons/close.svg"
                     alt="delete"
                     @click="deleteItem(n - 1)"
                   />
                   <img
                     :src="
-                      'src/assets/img/icons/' +
+                      '/src/assets/img/icons/' +
                       fastItems[n - 1]?.imageID +
                       '.svg'
                     "
